@@ -1,0 +1,34 @@
+{
+  "name": "show-me-what-you-got-test-two",
+  "version": "1.0.0",
+  "description": "A project given to new candidates to get a feel for how we would work together",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel src/ -d lib -s",
+    "test": "./node_modules/.bin/_mocha \"lib/**/*-tests.js\"",
+    "go": "node lib/index",
+    "start": "nodemon -x \"npm run compile && npm run test && npm run go\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://danwfeeney@github.com/the-ticket-group/show-me-what-you-got.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-ticket-group/show-me-what-you-got/issues"
+  },
+  "homepage": "https://github.com/the-ticket-group/show-me-what-you-got#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "request": "^2.79.0",
+    "sinon": "^1.17.7",
+    "sinon-as-promised": "^4.0.2"
+  }
+}

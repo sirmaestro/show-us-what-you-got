@@ -4,18 +4,16 @@
 
 This repository is given to new candidates to get a feel for how we would work together.
 
-The repository contains three projects: test-one, test-two, and test-three.
+The repository contains three projects: test-one, test-two, test-three, and test-four.
 
 Projects one and two use the following technologies:
 
-- NodeJS
+- NodeJS (You'll need to install this if you haven't already)
 - NPM - package manager
-- Babel - to transpile ES6 to ES5
-- Mocha - a test runner
-- Chai - an assertion engine
-- Sinon - a mocking framework
+- Babel - to transpile modern JS to ES5
+- Jest - a testing framework
 
-Project three leaves the technology decisions up to you!
+Project three and four leave the technology decisions up to you!
 
 Please fork this repository, commit as necessary, create a pull request for us to review, and send an email to let us know that you have finished.
 
@@ -34,13 +32,13 @@ Open a console window/tab to the 'test-one' project directory and run the follow
 Download project dependencies.
 
 ```
-npm install
+npm ci
 ```
 
 Transpile code from src folder to lib folder
 
 ```
-npm run compile
+npm run build
 ```
 
 Run unit tests

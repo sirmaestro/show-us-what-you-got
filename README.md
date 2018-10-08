@@ -32,7 +32,7 @@ Open a console window/tab to the 'test-one' project directory and run the follow
 Download project dependencies.
 
 ```
-npm ci
+npm i
 ```
 
 Transpile code from src folder to lib folder
@@ -80,7 +80,7 @@ Open a console window/tab to the 'test-two' project directory and run the follow
 Download project dependencies.
 
 ```
-npm ci
+npm i
 ```
 
 Transpile code from src folder to lib folder

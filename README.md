@@ -67,7 +67,7 @@ Currently, the 'test two' project makes requests to the GitHub API and outputs t
 
 Just to clarify, by the time you've completed the challenge, the program...
 
-- should output all Uber Babel users
+- should output all Babel users
 
 Note that the GitHub API limits requests, and you will probably reach the anonymous request limit while implementing this solution. To overcome this limit you will need to generate an OAuth key in your GitHub account's developer settings, and paste the key into the gitHubApiAuthToken constant in test-two/src/index.js
 

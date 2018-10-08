@@ -1,6 +1,7 @@
 # show-us-what-you-got
 
 ## Introduction
+
 This repository is given to new candidates to get a feel for how we would work together.
 
 The repository contains three projects: test-one, test-two, and test-three.
@@ -34,28 +35,32 @@ Download project dependencies.
 
 ```
 npm install
-
 ```
+
 Transpile code from src folder to lib folder
+
 ```
 npm run compile
-
 ```
+
 Run unit tests
+
 ```
 npm test
-
 ```
+
 and finally start the program
+
 ```
 npm run go
-
 ```
+
 Note that you can use the following command to compile, test and run the program every time you save a file (instead of running the above three commands every time you want to test your changes)
+
 ```
 npm start
-
 ```
+
 Now when you change code in the project src folder, nodemon will re-transpile, re-run unit tests, and re-start the program. See for yourself, go ahead and try changing the value of the message variable in test-one/src/index.js.
 
 ## Test Two
@@ -64,8 +69,8 @@ Currently, the 'test two' project makes requests to the GitHub API and outputs t
 
 Just to clarify, by the time you've completed the challenge, the program...
 
-* should output all Uber GitHub users
-* should output all repositories for each user
+- should output all Uber GitHub users
+- should output all repositories for each user
 
 Note that the GitHub API limits requests, and you will definitely reach the anonymous request limit while implementing this solution. To overcome this limit you will need to generate an OAuth key in your GitHub account's developer settings, and paste the key into the gitHubApiAuthToken constant in test-two/src/index.js
 
@@ -79,28 +84,32 @@ Download project dependencies.
 
 ```
 npm install
-
 ```
+
 Transpile code from src folder to lib folder
+
 ```
 npm run compile
-
 ```
+
 Run unit tests
+
 ```
 npm test
-
 ```
+
 and finally start the program
+
 ```
 npm run go
-
 ```
+
 Note that you can use the following command to compile, test and run the program every time you save a file (instead of running the above three commands every time you want to test your changes)
+
 ```
 npm start
-
 ```
+
 Now when you change code in the project src folder, nodemon will re-transpile, re-run unit tests, and re-start the program. See for yourself, go ahead and try changing test-two/src/index.js.
 
 ## Test Three
@@ -110,3 +119,12 @@ Currently, the 'test three' project includes a single file (menu-data.json), whi
 Using React and which ever other tools/libraries you choose, implement a website that includes a working menu that renders the menu items from the provided JSON file.
 
 The website does not necessarily need to include any content, your focus should be on the menu. Feel free to extend or manipulate the structure of the JSON file if necessary.
+
+## Test Four
+
+This is a CSS challenge. Open the index.html file in a browser. Edit only the `main.css` file to make the page look like the image below.
+
+- Preferably do not edit the index.html file
+- Extra points if the result is responsive!
+
+![example4.1.png](images/example4.1.png)

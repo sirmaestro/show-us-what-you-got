@@ -1,17 +1,16 @@
-class GitHubService {
-    constructor(baseUrl, http, apiAuthenticationToken) {
-        this.baseUrl = baseUrl;
-        this.http = http;
-        this.apiAuthenticationToken = apiAuthenticationToken;
-        this.authenticationQueryString = "";
-        if (this.apiAuthenticationToken !== "") {
-            this.authenticationQueryString = "?access_token=" + this.apiAuthenticationToken;
-        }
-    }
+import { get } from "../helpers/http";
 
-    getUsersForOrganisation(organisationId) {
-        return this.http.get(this.baseUrl + "orgs/" + organisationId + "/members" + this.authenticationQueryString);
-    }
-}
+const getAuthenticationQueryString = async apiAuthenticationToken =>
+  `?access_token=${apiAuthenticationToken}`;
 
-module.exports = GitHubService;
+export const getUsersForOrganisation = async (
+  baseUrl,
+  apiAuthenticationToken,
+  organisationId
+) => {
+  return get(
+    `${baseUrl}orgs/${organisationId}/members${await getAuthenticationQueryString(
+      apiAuthenticationToken
+    )}`
+  );
+};

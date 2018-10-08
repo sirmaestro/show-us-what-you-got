@@ -1,28 +1,18 @@
-import request from "request";
+import fetch from "node-fetch";
 
-class Http {
-    constructor(overrideRequest) {
-        this.request = overrideRequest || request;
+export const get = async url => {
+  const response = await fetch(url, {
+    method: "GET",
+    headers: {
+      "User-Agent": "request"
     }
+  });
 
-    get(url) {
-        let requestOptions = {
-            url,
-            headers: {
-                "User-Agent": "request"
-            }
-        };
+  const json = await response.json();
 
-        return new Promise((resolve, reject) => {
-            this.request.get(requestOptions, (error, response, body) => {
-                if (!error && response.statusCode == 200) {
-                    resolve(JSON.parse(body));
-                } else {
-                    reject(JSON.stringify(response));
-                }
-            });
-        });
-    }
-}
-
-module.exports = Http;
+  if (response.status === 200) {
+    return json;
+  } else {
+    throw Error(json.Message);
+  }
+};

@@ -1,7 +1,3 @@
-class Logger {
-    log(message) {
-        console.log(message);
-    }
-}
-
-module.exports = Logger;
+export const log = async message => {
+  console.log(message);
+};

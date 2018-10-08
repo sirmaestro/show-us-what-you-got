@@ -53,7 +53,7 @@ and finally start the program
 npm run go
 ```
 
-Note that you can use the following command to compile, test and run the program every time you save a file (instead of running the above three commands every time you want to test your changes)
+Note that you can use the following command to build, test and run the program every time you save a file (instead of running the other commands every time you want to test your changes)
 
 ```
 npm start
@@ -63,14 +63,13 @@ Now when you change code in the project src folder, nodemon will re-transpile, r
 
 ## Test Two
 
-Currently, the 'test two' project makes requests to the GitHub API and outputs the first page of users belonging to Uber's GitHub organisation. What we'd really like to see is a list of repositories for each user, for **all** Uber GitHub users.
+Currently, the 'test two' project makes requests to the GitHub API and outputs the first page of users belonging to Babel's GitHub organisation. What we'd really like to see is **all** Babel GitHub users. Bonus points for performance.
 
 Just to clarify, by the time you've completed the challenge, the program...
 
-- should output all Uber GitHub users
-- should output all repositories for each user
+- should output all Uber Babel users
 
-Note that the GitHub API limits requests, and you will definitely reach the anonymous request limit while implementing this solution. To overcome this limit you will need to generate an OAuth key in your GitHub account's developer settings, and paste the key into the gitHubApiAuthToken constant in test-two/src/index.js
+Note that the GitHub API limits requests, and you will probably reach the anonymous request limit while implementing this solution. To overcome this limit you will need to generate an OAuth key in your GitHub account's developer settings, and paste the key into the gitHubApiAuthToken constant in test-two/src/index.js
 
 ### Getting Started
 
@@ -81,13 +80,13 @@ Open a console window/tab to the 'test-two' project directory and run the follow
 Download project dependencies.
 
 ```
-npm install
+npm ci
 ```
 
 Transpile code from src folder to lib folder
 
 ```
-npm run compile
+npm run build
 ```
 
 Run unit tests
@@ -102,7 +101,7 @@ and finally start the program
 npm run go
 ```
 
-Note that you can use the following command to compile, test and run the program every time you save a file (instead of running the above three commands every time you want to test your changes)
+Note that you can use the following command to build, test and run the program every time you save a file (instead of running the other commands every time you want to test your changes)
 
 ```
 npm start

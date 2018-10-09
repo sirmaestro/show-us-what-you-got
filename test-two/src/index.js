@@ -2,8 +2,8 @@ import { log } from "./helpers/logger";
 import { getUsersForOrganisation } from "./services/github";
 
 const baseUrl = "https://api.github.com/";
-const organisationId = "babel";
-const gitHubApiAuthToken = ""; //add your GitHub API OAuth key here to increase request limit
+const organisationId = "google";
+const gitHubApiAuthToken = ""; // add your GitHub API OAuth key here to increase request limit
 
 export const go = async () => {
   try {

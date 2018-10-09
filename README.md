@@ -63,11 +63,11 @@ Now when you change code in the project src folder, nodemon will re-transpile, r
 
 ## Test Two
 
-Currently, the 'test two' project makes requests to the GitHub API and outputs the first page of users belonging to Babel's GitHub organisation. What we'd really like to see is **all** Babel GitHub users. Bonus points for performance.
+Currently, the 'test two' project makes requests to the GitHub API and outputs the first page of users belonging to Google's GitHub organisation. What we'd really like to see is **all** Google GitHub users. Bonus points for performance.
 
 Just to clarify, by the time you've completed the challenge, the program...
 
-- should output all Babel users
+- should output all Google users (hint there are over 2000 users)
 
 Note that the GitHub API limits requests, and you will probably reach the anonymous request limit while implementing this solution. To overcome this limit you will need to generate an OAuth key in your GitHub account's developer settings, and paste the key into the gitHubApiAuthToken constant in test-two/src/index.js
 

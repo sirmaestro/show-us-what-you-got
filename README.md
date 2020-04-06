@@ -32,7 +32,7 @@ Open a console window/tab to the 'test-one' project directory and run the follow
 Download project dependencies.
 
 ```
-npm i
+npm ci
 ```
 
 Transpile code from src folder to lib folder
@@ -122,6 +122,5 @@ The website does not necessarily need to include any content, your focus should 
 This is a CSS challenge. Open the index.html file in a browser. Edit only the `main.css` file to make the page look like the image below.
 
 - Preferably do not edit the index.html file
-- Extra points if the result is responsive!
 
 ![example4.1.png](images/example4.1.png)

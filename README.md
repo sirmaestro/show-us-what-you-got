@@ -4,20 +4,11 @@
 
 This repository is given to new candidates to get a feel for how we would work together.
 
-The repository contains three projects: test-one, test-two, test-three, and test-four.
-
-Projects one and two use the following technologies:
-
-- NodeJS (You'll need to install this if you haven't already)
-- NPM - package manager
-- Babel - to transpile modern JS to ES5
-- Jest - a testing framework
-
-Project three and four leave the technology decisions up to you!
+Please only complete the test/s requested as part of your application.
 
 Please fork this repository, commit as necessary, create a pull request for us to review, and send an email to let us know that you have finished.
 
-The details of the individual challenges follow, along with step by step instructions to get up and running once you have a local clone of the repository. Good luck : )
+The details of the individual tests follow, along with step by step instructions to get up and running once you have a local clone of the repository. Good luck : )
 
 ## Test One
 
@@ -124,3 +115,7 @@ This is a CSS challenge. Open the index.html file in a browser. Edit only the `m
 - Preferably do not edit the index.html file
 
 ![example4.1.png](images/example4.1.png)
+
+## Test Five
+
+Create an AWS CDK Typescript project that deploy's a 'create react app' to AWS prioritising scalability and resilience.
